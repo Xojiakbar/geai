@@ -2,7 +2,7 @@
 
 A polished, responsive frontend MVP for the GEAI renewable-energy intelligence platform, designed to connect to the existing landing site:
 
-https://innovation-guide-box.lovable.app/
+https://geai.lovable.app/
 
 ## Included
 
