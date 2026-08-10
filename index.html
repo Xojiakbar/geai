@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GEAI renewable-energy intelligence platform" />
+  <title>GEAI Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="toast" class="toast"></div>
+
+  <section id="login-screen" class="login-shell">
+    <div class="login-art">
+      <a class="brand brand-light" href="https://innovation-guide-box.lovable.app/" target="_blank" rel="noreferrer">
+        <span class="brand-mark">G</span><span>GEAI</span>
+      </a>
+      <div class="login-copy">
+        <span class="eyebrow light">GREEN ENERGY · ARTIFICIAL INTELLIGENCE</span>
+        <h1>Turn renewable-energy data into decisions.</h1>
+        <p>Predict production, detect underperformance, prioritize maintenance, and manage every renewable asset from one intelligent console.</p>
+        <div class="login-stat-row">
+          <div><strong>24/7</strong><span>AI diagnostics</span></div>
+          <div><strong>&lt;15m</strong><span>fault-to-alert</span></div>
+          <div><strong>1 console</strong><span>every asset class</span></div>
+        </div>
+      </div>
+      <div class="grid-glow"></div>
+    </div>
+
+    <div class="login-panel">
+      <a class="back-link" href="https://innovation-guide-box.lovable.app/">← Back to GEAI website</a>
+      <form id="login-form" class="login-card">
+        <div class="mobile-brand"><span class="brand-mark">G</span><strong>GEAI</strong></div>
+        <span class="eyebrow">SECURE PLATFORM ACCESS</span>
+        <h2>Welcome back</h2>
+        <p class="muted">Sign in to your renewable-energy intelligence workspace.</p>
+
+        <label>Email</label>
+        <input id="email" type="email" value="operator@geai.energy" required />
+        <label>Password</label>
+        <div class="password-wrap">
+          <input id="password" type="password" value="demo1234" required />
+          <button type="button" id="toggle-password" class="text-btn">Show</button>
+        </div>
+        <div class="form-row"><label class="check"><input type="checkbox" checked> Remember me</label><a href="#">Forgot password?</a></div>
+        <button class="primary-btn wide" type="submit">Sign in to platform</button>
+        <div class="demo-box">
+          <strong>Demo access</strong>
+          <button type="button" data-demo="user">Operator workspace</button>
+          <button type="button" data-demo="admin">Admin workspace</button>
+        </div>
+        <small>Protected workspace · Role-based access · Audit-ready</small>
+      </form>
+    </div>
+  </section>
+
+  <div id="app-shell" class="app-shell hidden">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <a class="brand" href="https://innovation-guide-box.lovable.app/" target="_blank"><span class="brand-mark">G</span><span>GEAI</span></a>
+        <button id="sidebar-collapse" class="icon-btn" aria-label="Collapse sidebar">☰</button>
+      </div>
+      <div class="org-switcher">
+        <span class="org-avatar">NE</span>
+        <div><strong>Nova Energy</strong><small>Enterprise workspace</small></div>
+        <span class="chev">⌄</span>
+      </div>
+      <nav id="nav" class="nav"></nav>
+      <div class="sidebar-bottom">
+        <div class="mini-status"><span class="status-dot"></span><div><strong>All systems operational</strong><small>Data updated 42 sec ago</small></div></div>
+        <a href="https://innovation-guide-box.lovable.app/" target="_blank" class="website-link">↗ GEAI website</a>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <button id="mobile-menu" class="icon-btn mobile-only">☰</button>
+          <span id="breadcrumb" class="breadcrumb">Platform / Overview</span>
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn notification" title="Notifications">♢<span>3</span></button>
+          <button class="profile-btn" id="profile-menu">
+            <span id="profile-avatar" class="avatar">KB</span>
+            <span class="profile-copy"><strong id="profile-name">Khojiakbar Botirov</strong><small id="profile-role">Portfolio Operator</small></span>
+            <span>⌄</span>
+          </button>
+        </div>
+      </header>
+      <section id="content" class="content"></section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
